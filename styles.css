@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  background-color: rgb(25, 25, 25);
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(25, 25, 25);
+  padding: 20px 5%;
+  width: 100%;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+a {
+  margin: 10px;
+  font-family: "TESLA Regular";
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  font-size: 1rem;
+}
+a:hover {
+  color: orange;
+  transform: scale(1.075);
+}
+.logo {
+  font-family: "Ferro Rosso Regular";
+  cursor: pointer;
+  text-decoration: underline 5px solid orange;
+  color: white;
+  font-size: 2.5rem;
+}
+.search {
+  position: relative;
+}
+.search input {
+  width: 50em;
+  max-width: 400px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 50px;
+  font-size: 1rem;
+  padding: 10px 40px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.material-symbols-outlined {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+.goat {
+  object-fit: cover;
+  width: 100%;
+  max-height: 50.7em;
+  object-position: center;
+  opacity: 0;
+  transition: ease-in 1s;
+  filter: blur(5px);
+}
+.opc {
+  opacity: 1;
+  filter: blur(0);
+}
+.explr-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  border: 1px solid orange;
+  background-color: rgba(0, 0, 0, 0.799);
+  cursor: pointer;
+  font-size: 3rem;
+  font-family: "911 Porscha Regular";
+  color: white;
+  padding: 10px 30px;
+  animation: load 1.5s ease-out infinite;
+}
+.explr-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.item-img {
+  height: 250px;
+  width: 100%;
+  max-width: 480px;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+.item {
+  margin: 20px;
+  border-radius: 10px;
+}
+.item:hover {
+  cursor: pointer;
+}
+.item img:hover {
+  transform: scale(1.2);
+}
+.heading {
+  text-align: center;
+  font-family: "911 Porscha Regular";
+  font-size: 3rem;
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding-bottom: 80px;
+}
+.item img {
+  transition: ease-in-out 0.3s;
+}
+.item-car {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+.img-container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.footer {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  padding: 50px;
+  background-color: rgb(10, 10, 10);
+  font-family: "Poppins", sans-serif;
+}
+b {
+  font-weight: 900;
+}
+@keyframes load {
+  0% {
+    background: #ffffff00;
+    border: 0px solid #ffffff08;
+  }
+  20% {
+    background: #ffffff00;
+    border: 10px solid #fb840531;
+  }
+  40% {
+    background: #ffffff00;
+    border: 10px solid #fd83004e;
+  }
+  60% {
+    background: #ffffff00;
+    border: 10px solid #fd830034;
+  }
+  80% {
+    background: #ffffff00;
+    border: 10px solid #3937350f;
+  }
+  100% {
+    background: #ffffff00;
+    border: 0px solid #22222205;
+  }
+}
+@media (max-width: 1440px) {
+  .logo {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 0.9rem;
+  }
+  .search input {
+    max-width: 300px;
+  }
+  .explr-btn {
+    font-size: 2rem;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .item-img {
+    height: 220px;
+    max-width: 400px;
+  }
+}
